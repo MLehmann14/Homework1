@@ -1,25 +1,14 @@
 {
-  "name": "react",
+  "name": "interest-calculator",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.tsx",
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "^5.0.0"
-  },
-  "devDependencies": {
-    "@types/react": "18.2.38",
-    "@types/react-dom": "18.2.15",
-    "loader-utils": "3.2.1",
-    "typescript": "4.4.4"
-  },
+  "description": "A simple interest calculator",
+  "main": "index.html",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "serve"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "keywords": ["html", "css"],
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
 }

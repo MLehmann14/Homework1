@@ -1,53 +1,63 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-}
-#title {
-  text-align: center;
-}
-
-#gif,
-#gif2 {
-  width: 200px;
-  height: auto;
-  margin: 50px;
-  display: inline-block;
-  vertical-align: middle;
+  font-family: "Poppins";
+  font-weight: bold;
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
 }
 
-.App {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: lightblue;
-  text-align: center;
-  background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1000w,f_auto,q_auto:best/newscms/2019_06/2746941/190208-stock-money-fanned-out-ew-317p.jpg"); /* Replace with your desired image URL */
-  background-size: cover;
-  background-position: center;
+article {
+  display: grid;
+  grid-template: 50px auto 20px / 100%;
   height: 100vh;
-  color: white;
 }
 
-input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin: 10px 0;
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
 }
 
-.info {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #e9ecef;
-  border-radius: 8px;
+header {
+  font-size: 40px;
+  text-shadow: 2px 2px gray;
 }
 
-.info p {
-  margin: 5px 0;
+footer {
+  font-style: italic;
+}
+
+form {
+  display: grid;
+  grid-template: auto auto auto auto / 5em 175px;
+  gap: 5px;
+}
+
+main {
+  padding: 20px 10px 0px 10px;
+}
+
+#apr {
+  width: 105px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(
+    1.1
+  ); /* Increases the size of the button when cursor hovers over it */
+  background-color: green; /* Changes background color when hovered over */
 }
